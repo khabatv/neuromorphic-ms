@@ -1,52 +1,51 @@
-# neuromorphic-ms
-A biologically inspired framework for mass spectral similarity using Spike-Timing-Dependent Plasticity (STDP) and fragmentation hierarchies
+# Neuromorphic Spectral Similarity Materials
 
+This repository contains the source code, queries, libraries, benchmark outputs, and supporting materials for the study:
 
-# Rethinking Spectral Similarity in Mass Spectrometry: A Neuromorphic Perspective
+**Rethinking Spectral Similarity in Mass Spectrometry: A Neuromorphic Perspective**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19205996.svg)](https://doi.org/10.5281/zenodo.19205996)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Repository contents
 
-This repository contains the code, data, and benchmarking results for the paper **"Rethinking Spectral Similarity in Mass Spectrometry: A Neuromorphic Perspective"** published in *Frontiers in Analytical Science*.
+This repository may include:
 
-## Overview
+- Code used to implement and evaluate the neuromorphic spectral similarity method.
+- Query spectra, matching libraries, and supporting public spectral resources.
+- Benchmark outputs and result tables used in the manuscript.
+- Scripts used to generate figures and analysis outputs.
+- Supplementary files needed for reproducibility.
 
-Traditional spectral similarity metrics (e.g., Cosine, Jaccard) treat mass spectra as static vectors. This project introduces a **Neuromorphic Similarity Score ($S_{neu}$)** that reframes fragmentation as a temporal sequence. By mapping peak intensity ranks to "neural spikes" and applying Spike-Timing-Dependent Plasticity (STDP) principles, we capture the hierarchical nature of fragmentation cascades.
+## Purpose
 
-## Repository Contents
+The purpose of this repository is to archive the computational and analytical materials used for the manuscript and to support transparent, reproducible research.
 
-- `/code`: Python implementation of the `neuromorphic_algorithm_v7` and the `Spectralogic AI v10.3` benchmarking suite.
-- `/data`: 
-    - `query_spectra.msp`: 1,972 diverse query spectra curated from public NIST and MoNA-type sources.
-    - `reference_library.msp`: The reference spectral library used for matching.
-- `/results`: Raw output files, CSV summaries, and metadata used to generate Figure 1 and the performance metrics (F1-score, Recall) reported in the paper.
-- `/docs`: Supplementary documentation regarding the STDP parameter tuning ($\alpha, \beta$).
+## Study focus
 
-## Installation
+The work proposes a neuromorphic perspective on spectral similarity in mass spectrometry, using rank-ordered fragment peaks and biologically inspired timing concepts to compare spectra.
 
-```bash
-git clone [https://github.com/SpectralogicAI/neuromorphic-ms.git](https://github.com/SpectralogicAI/neuromorphic-ms.git)
-cd neuromorphic-ms
-pip install -r requirements.txt
+## Data and resources
 
+This repository may include materials derived from public resources such as NIST-related spectral libraries and other publicly available spectral datasets. Please check individual files and citations for source-specific licensing and attribution requirements.
 
-## Usage
-To reproduce the benchmark results:
+## Reproducibility
 
-```Python
-from code.neuromorphic_engine import calculate_similarity
+Where possible, the repository includes:
 
-# Example: Calculate similarity between two spectra
-score = calculate_similarity(spectrum_a, spectrum_b, alpha=0.5, beta=0.1)
-print(f"Neuromorphic Similarity Score: {score}")
-
+- Input data or query files.
+- Code used for preprocessing, scoring, and evaluation.
+- Outputs used in the paper figures and results.
+- Scripts for regenerating published analysis steps.
 
 ## Citation
-If you use this code or data in your research, please cite:
 
-Vahabi, K., et al. (2026). Rethinking Spectral Similarity in Mass Spectrometry: A Neuromorphic Perspective. Frontiers in Analytical Science. DOI: 10.5281/zenodo.19205996
+If you use this repository, please cite the associated manuscript and the archived Zenodo release.
+
+## License
+
+See the `LICENSE` file for licensing terms.
 
 ## Contact
-Khabat Vahabi: vahabi@igzev.de
 
-Paula C. P. Bueno: bueno@igzev.de
+Corresponding authors:
+- Khabat Vahabi
+- Nicole M. van Dam
+- Paula C. P. Bueno
