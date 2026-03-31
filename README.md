@@ -28,3 +28,23 @@ Traditional spectral similarity metrics (e.g., Cosine, Jaccard) treat mass spect
 git clone [https://github.com/SpectralogicAI/neuromorphic-ms.git](https://github.com/SpectralogicAI/neuromorphic-ms.git)
 cd neuromorphic-ms
 pip install -r requirements.txt
+
+
+Usage
+To reproduce the benchmark results:
+
+Python
+from code.neuromorphic_engine import calculate_similarity
+
+# Example: Calculate similarity between two spectra
+score = calculate_similarity(spectrum_a, spectrum_b, alpha=0.5, beta=0.1)
+print(f"Neuromorphic Similarity Score: {score}")
+Citation
+If you use this code or data in your research, please cite:
+
+Vahabi, K., et al. (2026). Rethinking Spectral Similarity in Mass Spectrometry: A Neuromorphic Perspective. Frontiers in Analytical Science. DOI: 10.5281/zenodo.19205996
+
+Contact
+Khabat Vahabi: vahabi@igzev.de
+
+Paula C. P. Bueno: bueno@igzev.de
